@@ -1,0 +1,1 @@
+var usersDomain = require('../domain');
