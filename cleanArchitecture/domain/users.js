@@ -2,6 +2,20 @@ var usersDB = require('../db/users');
 
 exports.createUser = function( userData ){
     return new Promise(function( resolve, reject ){
-        
+        if(!userData.surname ||
+            !userData.lastname || 
+            !userData.dni){
+                reject('Missing Fields');
+                return;
+        }
+        userData.completename = userData.surname + userData.lastname;
+
+        usersDB.saveUser(userData)
+            .then( user => {
+                resolve(user);
+            })
+            .catch(err => {
+                reject(err);
+            })
     });
 };

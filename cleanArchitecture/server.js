@@ -9,8 +9,19 @@ var app = express();
 db_tools.DBConnectMongoose()
     .then( () => {
         console.log('yeah bitch');
+        var routes = require('./routes/routes');
+
+        // configure app to use bodyParser()
+        // this will let us get the data from a POST
+        app.use(bodyparser.urlencoded({extended: true}));
+        app.use(bodyparser.json({limit: '10mb'}));
+
+        routes.assingRoutes(app);
+        const port = 3002;
+        app.listen(port);
+        console.log('Server listening at '+ port);
         
-    })
+    })  
     .catch( err => {
         console.log('Error: '+ err);
     } )
