@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+        {% block metatags %}
+            <meta name="description" content="">
+        {% endblock %}
+        <title>{% block title %}{{ data.title|default('No title') }}{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="public/css/main.css" />
+        {% endblock %}
+
+        {% block pre_javascript %}
+        {% endblock %}
+
+        {% block favIcon %}
+            <link rel="icon" type="image/x-icon" href="" />
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+            <script src="public/js/jquery.min.js"></script>
+			<script src="public/js/skel.min.js"></script>
+			<script src="public/js/util.js"></script>
+			<script src="public/js/main.js"></script>
+        {% endblock %}
+        
+    </body>
+</html>

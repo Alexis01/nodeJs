@@ -12,4 +12,8 @@ It is a clean architecture for nodejs, using v9 api library with examples.
 
 4. Get application (express, http ...)
 
-5. 
+5. Up aplication
+
+## WORKFLOW
+
+ROUTES => DOMAIN => DB

@@ -2,7 +2,7 @@
   "name": "nodejsv9",
   "version": "0.0.1",
   "description": "Nodejs v9 examples",
-  "main": "index.js",
+  "main": "server.js",
   "license": "Apache-2.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,8 +21,10 @@
     "child_process": "^1.0.2",
     "express": "^4.16.2",
     "grunt": "^1.0.1",
+    "html": "^1.0.0",
     "http": "0.0.0",
     "jshint": "^2.9.5",
-    "mongoose": "^4.13.3"
+    "mongoose": "^4.13.3",
+    "twig": "^1.10.5"
   }
 }

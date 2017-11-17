@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block body %}
+    {{parent}}
+    <div id="wrapper">
+
+        <!-- Main -->
+        {% include './mains/main.twig' %}
+
+        <!-- Sidebar -->
+        {% include './sidebars/sidebar.twig' %}   
+
+    </div>
+{% endblock %}
