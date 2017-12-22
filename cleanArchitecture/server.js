@@ -8,7 +8,7 @@ var app = express();
 
 db_tools.DBConnectMongoose()
     .then( () => {
-        console.log('yeah bitch');
+        
         var routes = require('./routes/routes');
 
         // configure app to use bodyParser()

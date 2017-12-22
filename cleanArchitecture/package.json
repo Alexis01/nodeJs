@@ -6,15 +6,21 @@
     "pretest": "jshint ."
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "1.17.2",
     "eslint": "^4.7.2",
     "express": "^4.15.4",
     "graphql": "^0.11.6",
-    "mongoose": "^4.11.9"
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.11.9",
+    "mongoose-type-email": "^1.0.5"
   },
   "repository": {
     "type": "Git",
     "url": "https://github.com/Alexis01/nodeJs.git"
   },
-  "description": "Example for defining a clean architecture in Node JS"
+  "description": "Example for defining a clean architecture in Node JS",
+  "devDependencies": {
+    "nodemon": "^1.14.1"
+  }
 }

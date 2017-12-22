@@ -10,3 +10,13 @@ exports.createUser = function(req,res,next){
             res.status(400).send(err);
         })
 };
+exports.logInUser = function(req,res,next){
+    var userData = req.body;
+    usersDomain.logIn(userData)
+        .then(user => {
+            res.send(user);
+        })
+        .catch(err => {
+            res.status(400).send(err);
+        })
+};
